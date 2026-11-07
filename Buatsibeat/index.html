@@ -24,10 +24,10 @@
     <script src="https://files.dariku.my.id/dks205/s.js"></script>
     <script>
       // Teks pada cover
-      textOpening = "Special For You";
+      textOpening = "Special buat beat XD";
 
       // File musik
-      musik = "";
+      musik = "m2.mp3";
 
       // [OPSIONAL] isi background jika tidak ingin menggunakan bakground bawaan
       background = "";
@@ -43,16 +43,16 @@
       // Jika ingin menambahkan ucapan ikuti seperti contoh
       konten = [
         {
-          gambar: "File gambar",
-          ucapan: "Ucapan 1",
+          gambar: "g2.jpg",
+          ucapan: "oyy beat udah XD ,udah tidur pasti lu eak XD",
         },
         {
-          gambar: "File gambar",
-          ucapan: "Ucapan 2",
+          gambar: "g6.jpg",
+          ucapan: "apa ? cuma mau nanya itu doang ko",
         },
         {
-          gambar: "File gambar",
-          ucapan: "Ucapan 3",
+          gambar: "g4.jpg",
+          ucapan: "canda eaa XD ,mangat beat ngerjain skripsinya gw doain selesai pagi XD ,udah itu aja bingung gw mo speak apa ngantuk soalnya 😭 jan lupa turu beat XD",
         },
       ];
 
@@ -61,16 +61,8 @@
 
       var swalo = Swal.mixin({ allowOutsideClick: false, reverseButtons: true });
       async function kirimPesan() {
-        klikA.play();
-        var { value: pesan } = await swalo.fire({ title: "Tulis pesan", input: "textarea", confirmButtonText: "Kirim" });
-        klikA.play();
-        if (pesan) {
-          await swalo.fire({ title: "Kirim pesannya ke wa aku ya" });
-          location.assign(`https://wa.me/${nomorWhatsapp}?text=${pesan}`);
-        } else {
-          await swalo.fire({ title: "Jangan dikosongin ya :)" });
-          kirimPesan();
-        }
+        location.assign("https://www.instagram.com/lazz_fox/")
+  }
       }
 
       isKlikAudio = 1;
